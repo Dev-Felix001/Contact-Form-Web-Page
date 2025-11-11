@@ -1,4 +1,4 @@
-
+/* Reset and Base */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-
+/* Navigation Bar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -50,7 +50,7 @@ nav ul li a:hover {
   color: white;
 }
 
-
+/* Contact Section */
 .contact {
   background: white;
   width: 90%;
@@ -73,7 +73,7 @@ nav ul li a:hover {
   margin-bottom: 25px;
 }
 
-
+/* Form Styling */
 form {
   display: flex;
   flex-direction: column;
@@ -113,7 +113,7 @@ button:hover {
   color: gold;
 }
 
-
+/* Footer */
 footer {
   text-align: center;
   background: black;
@@ -122,4 +122,61 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+/* Navigation Menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: gold;
+  font-weight: 500;
+  padding: 8px 12px;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: white;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: black;
+  min-width: 160px;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.dropdown-content li a {
+  padding: 10px;
+  color: gold;
+  font-weight: normal;
+}
+
+.dropdown-content li a:hover {
+  background: gold;
+  color: black;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: make nav items spacing */
+.nav-menu li {
+  margin-right: 15px;
 }
